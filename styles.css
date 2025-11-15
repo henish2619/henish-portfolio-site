@@ -122,6 +122,77 @@ h2 {
     color: #e50914;
 }
 
+/* Features grid styling */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: #181818;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.feature-card i {
+    color: #e50914;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #e50914;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+/* Experience section styling */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.experience-item {
+    background-color: #181818;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.experience-item h3 {
+    color: #e50914;
+    margin-top: 0;
+}
+
+.experience-item .company,
+.experience-item .period {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item ul {
+    padding-left: 1.25rem;
+    margin: 0;
+    color: #e5e5e5;
+    font-size: 0.9rem;
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+}
+
 /* Primary buttons */
 .btn {
     display: inline-block;
