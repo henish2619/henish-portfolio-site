@@ -3,19 +3,23 @@
  * The design focuses on readability, clean layouts and responsiveness.
  */
 
+/*
+ * Updated styling inspired by Netflix's desktop aesthetic.
+ * Dark backgrounds paired with bold red accents create a cinematic feel.
+ */
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #141414; /* Netflix dark background */
+    color: #e5e5e5;           /* light grey text for readability */
     line-height: 1.6;
 }
 
 header {
-    background-color: #0d47a1;
-    color: #fff;
+    background-color: #141414;
     padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #e50914; /* red accent line */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,13 +27,14 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #e50914; /* Netflix red for the main title */
 }
 
 header .subtitle {
     font-size: 1rem;
     margin-top: 0.25rem;
-    opacity: 0.9;
+    color: #b3b3b3; /* muted grey subtitle */
 }
 
 nav ul {
@@ -41,19 +46,20 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #e5e5e5;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav a:hover,
 nav a:focus {
-    background-color: #1565c0;
+    color: #e50914; /* red highlight on hover */
 }
 
+/* Constrain content width and center it */
 .container {
     width: 90%;
     max-width: 1000px;
@@ -61,17 +67,19 @@ nav a:focus {
     padding: 0 1rem;
 }
 
+/* Increase section spacing for cinematic feel */
 .section {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
+/* Light sections become slightly lighter dark sections */
 .bg-light {
-    background-color: #ffffff;
+    background-color: #181818;
 }
 
 h2 {
     margin-top: 0;
-    color: #0d47a1;
+    color: #e50914;
     text-align: center;
 }
 
@@ -82,9 +90,10 @@ h2 {
     margin-top: 1rem;
 }
 
+/* Heading colors for lists */
 .skills-grid h3 {
     margin-bottom: 0.5rem;
-    color: #1565c0;
+    color: #e50914;
 }
 
 .skills-grid ul {
@@ -99,24 +108,26 @@ h2 {
     margin-top: 2rem;
 }
 
+/* Project cards with dark backgrounds */
 .project-card {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: #181818;
+    border: 1px solid #333;
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .project-card h3 {
     margin-top: 0;
-    color: #1565c0;
+    color: #e50914;
 }
 
+/* Primary buttons */
 .btn {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background-color: #0d47a1;
+    background-color: #e50914;
     color: #fff;
     border-radius: 4px;
     text-decoration: none;
@@ -125,7 +136,7 @@ h2 {
 
 .btn:hover,
 .btn:focus {
-    background-color: #1565c0;
+    background-color: #f40612;
 }
 
 .contact-info {
@@ -133,15 +144,47 @@ h2 {
     padding: 0;
 }
 
+/* Contact list spacing */
 .contact-info li {
     margin-bottom: 0.5rem;
 }
 
 footer {
-    background-color: #0d47a1;
-    color: #fff;
+    background-color: #141414;
+    color: #b3b3b3;
     text-align: center;
     padding: 1rem 0;
+    border-top: 3px solid #e50914;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #141414;
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+.hero h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    color: #b3b3b3;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+.hero .btn {
+    background-color: #e50914;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.hero .btn:hover,
+.hero .btn:focus {
+    background-color: #f40612;
 }
 
 @media (max-width: 600px) {
