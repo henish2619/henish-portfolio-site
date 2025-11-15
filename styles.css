@@ -317,3 +317,9 @@ footer {
 .contact-section a:focus {
     text-decoration: underline;
 }
+
+/* Make contact section stand out with a slightly different dark background and subtle red border */
+.contact-section {
+    background-color: #0d0d0d;
+    border-top: 2px solid #e50914;
+}
