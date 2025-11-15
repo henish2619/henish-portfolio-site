@@ -233,7 +233,8 @@ footer {
     position: relative;
     text-align: center;
     padding: 6rem 0 4rem;
-    background-image: url('images/hero-bg.png');
+    /* Use root-relative path since images are stored at the project root on GitHub */
+    background-image: url('hero-bg.png');
     background-size: cover;
     background-position: center;
 }
