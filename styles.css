@@ -455,9 +455,21 @@ footer {
     margin-top: 1rem;
 }
 
+/*
+ * Gallery images styling
+ *
+ * Give each picture a defined border and a slightly stronger drop shadow so
+ * they stand out against the dark background. Without a border the dark
+ * edges of the photos blended into the page, which some viewers mistook
+ * for broken images. The heavier shadow provides more separation and
+ * depth while preserving the cinematic aesthetic.
+ */
 .gallery-grid img {
     width: 100%;
     height: auto;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle border to delineate image edges */
+    border: 2px solid #333;
+    /* Increase shadow size and opacity for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
