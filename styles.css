@@ -19,10 +19,7 @@ body {
 header {
     background-color: #141414;
     padding: 1rem 0;
-    border-bottom: 3px solid #e50914; /* red accent line */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    border-bottom: 3px solid #e50914; /* red accent line /0
 }
 
 header h1 {
