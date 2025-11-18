@@ -83,26 +83,23 @@ h2 {
     text-align: center;
 }
 
-/* Skills layout */
+
+/* Skills – 5 columns on desktop */
 .skills-grid {
     display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 1rem;
 }
 
-/* Desktop: show all 5 skill groups in one row */
-@media (min-width: 900px) {
-    .skills-grid {
-        grid-template-columns: repeat(5, minmax(140px, 1fr));
-    }
-}
-
-/* Tablets / mobile: let items wrap nicely */
-@media (max-width: 899px) {
+/* On smaller screens, let them wrap nicely */
+@media (max-width: 800px) {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 }
+
+
 
 
 /* Heading colors for lists */
