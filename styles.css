@@ -437,14 +437,21 @@ footer {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-}
 
 /* LinkedIn Learning courses list */
 .linkedin-certs-list {
     list-style: disc;
     padding-left: 1.5rem;
     color: #e5e5e5;
-    margin-top: 1rem;
+
+
+@media (max-width: 768px) {
+    header {
+        position: static;
+        top: auto;
+    }
+}
+    
 }
 .linkedin-certs-list li {
     margin-bottom: 0.5rem;
